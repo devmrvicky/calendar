@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar</title>
+  <!-- main style sheet -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- tip-calculator js -->
+  <script type="module" src="./script.js" defer></script>
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Project code -->
+  <main id="app" data-project-name="calendar">
+    <div id="calendar">
+      <!-- calendar navigation bar -->
+      <div id="nav">
+        <div class="cldr-logo">
+          <h1>CLDR</h1>
+        </div>
+        <ul class="cldr-menu-items">
+          <li class="cldr-menu-item">Today</li>
+          <li class="cldr-menu-item">Calendar</li>
+          <li class="cldr-menu-item">Organize</li>
+        </ul>
+        <div class="profile">
+          <button title="show all event" class="show-event">
+            <i class="fa fa-angle-down"></i>
+          </button>
+          <div class="profile-img">
+            <!-- <img src="../../img/profile.jpg" alt="profile"> -->
+            <i class="fa-solid fa-user-circle"></i>
+          </div>
+        </div>
+      </div>
+      <!-- calendar content -->
+      <div class="cldr-container">
+        <div class="time-line">
+          <!-- year and month will append by js -->
+        </div>
+        <div class="cldr-prev">
+          <div class="days">
+            <!-- day's name will append by js -->
+          </div>
+          <div class="dates">
+            <!-- All date will append using JavaScript -->
+          </div>
+        </div>
+        <div class="events">
+          <div class="selected-date">
+            <!-- full date will appended using JavaScript -->
+          </div>
+          <ul>
+            <!-- all event will append using js -->
+          </ul>
+        </div>
+      </div>
+      <!-- event create button -->
+      <button type="button" title="create event" class="add-event-btn"></button>
+      <!-- add event module -->
+      <div class="module">
+        <div class="module-container">
+          <h3>Add event</h3>
+          <form action="">
+            <div class="input-field">
+              <label for="eventName">What is your name of event?</label>
+              <input type="text" name="event-name" id="eventName">
+            </div>
+            <div class="input-field">
+              <p>What is your start and end time?</p>
+              <div class="startTime">
+                <label for="startTime">Start time</label>
+                <input type="time" name="start time" id="startTime" value="09:00">
+              </div>
+              <div class="endTime">
+                <label for="endTime">End time</label>
+                <input type="time" name="end time" id="endTime" value="09:00">
+              </div>
+            </div>
+            <div class="input-field">
+              <label for="eventDate">What is your event date?</label>
+              <input type="date" name="event date" id="eventDate" value="2023-06-12">
+            </div>
+            <div class="ctrl-btns">
+              <button type="button">cancel</button>
+              <button type="reset">reset</button>
+              <button type="submit">submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
